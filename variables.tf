@@ -77,3 +77,24 @@ variable "db_subnet_group_tags" {
 variable "nat_gateway_tags" {
     default = {}
 }
+
+variable "public_route_table_tags" {
+    default = {}
+}
+
+variable "private_route_table_tags" {
+    default = {}
+}
+
+variable "database_route_table_tags" {
+    default = {}
+}
+
+variable "is_peering_required" {
+    type = bool
+    default = false
+}
+
+variable "vpc_peering_tags" {
+    default = {}
+}

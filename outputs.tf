@@ -9,3 +9,7 @@ output "vpc_id" {
 # output "default_vpc_info" {
 #     value = data.aws_vpc.default.id
 # }
+
+output "public_subnet_ids" {
+    value = aws_vpc.main.public_subnet_ids
+}
